@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maxeleron.dev</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-lg">
+        <div class="max-w-screen-xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-x-2">
+                <div class="w-8 h-8 bg-emerald-500 rounded-2xl flex items-center justify-center text-black font-bold text-xl">⚡︎</div>
+                <span class="heading-font text-2xl tracking-tighter">maxeleron.dev</span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <a href="mailto:maxeleron@gmail.com" 
+               class="px-6 py-3 bg-white text-black rounded-3xl font-semibold hover:bg-emerald-400 hover:text-black transition-colors flex items-center gap-x-2">
+                <i class="fa-solid fa-paper-plane"></i>
+                Let's build
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="max-w-screen-xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">              
+                <h1 class="heading-font text-7xl md:text-8xl leading-none tracking-tighter">
+                    I ship<br>digital products<br>that <span class="text-emerald-400">actually work</span>.
+                </h1>
+                
+                <p class="text-xl text-white/70 max-w-md">
+                    Front-end developer • Automation QA • Node.js
+                </p>
+                
+                <div class="flex items-center gap-x-4">
+                    <a href="#projects" 
+                       class="px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-black font-semibold rounded-3xl text-lg flex items-center gap-x-3 transition-all">
+                        See my projects
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    
+                    <a href="https://t.me/maxeleron" target="_blank" rel="noopener noreferrer"
+                       class="px-8 py-4 border border-white/30 hover:border-white/60 font-medium rounded-3xl text-lg flex items-center gap-x-2 transition-all">
+                        <i class="fa-brands fa-telegram"></i>
+                        @maxeleron
+                    </a>
+                    <a href="https://t.me/maxeleron" target="_blank" rel="noopener noreferrer"
+                       class="px-8 py-4 border border-white/30 hover:border-white/60 font-medium rounded-3xl text-lg flex items-center gap-x-2 transition-all">
+                        <i class="fa-brands fa-discord"></i>
+                        @socrates
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Terminal style preview -->
+            <div class="hidden md:block bg-zinc-900 border border-white/10 rounded-3xl p-6 shadow-2xl">
+                <div class="flex items-center gap-x-2 mb-4">
+                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                    <div class="w-3 h-3 bg-emerald-500 rounded-full"></div>
+                    <div class="ml-auto text-xs text-white/40 font-mono">terminal • maxeleron.dev</div>
+                </div>
+                <div class="font-mono text-emerald-400 text-lg leading-relaxed">
+                    $ git clone https://maxeleron.dev<br>
+                    $ cd maxeleron.dev<br>
+                    $ npm run build<br>
+                    <span class="text-white">✅ Built in 0.8s</span><span class="terminal">_</span>
+                </div>
+                <div class="mt-6 text-xs text-white/30 font-medium flex items-center gap-x-3">
+                    <span class="px-3 py-1 bg-white/10 rounded-2xl">Next.js</span>
+                    <span class="px-3 py-1 bg-white/10 rounded-2xl">Tailwind</span>
+                    <span class="px-3 py-1 bg-white/10 rounded-2xl">TypeScript</span>
+                    <span class="px-3 py-1 bg-white/10 rounded-2xl">Supabase</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 flex flex-col items-center gap-y-1 text-white/30 text-xs">
+            <div>SCROLL FOR MORE</div>
+            <i class="fa-solid fa-chevron-down animate-bounce"></i>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="max-w-screen-xl mx-auto px-6 py-24">
+        <div class="flex justify-between items-end mb-12">
+            <h2 class="heading-font text-5xl tracking-tighter">Featured projects</h2>
+            <a href="#" class="flex items-center gap-x-2 text-emerald-400 hover:text-emerald-300 font-medium">
+                View all projects 
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="group bg-zinc-900 rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-300">
+                <div class="h-64 bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center text-6xl font-bold text-white/90">01</div>
+                <div class="p-8">
+                    <div class="text-emerald-400 text-sm font-medium mb-2">GAME • WEB</div>
+                    <h3 class="text-2xl font-semibold mb-2">WordsChains - memory game</h3>
+                    <p class="text-white/60">A memory-focused word game for training recall, attention, and associative thinking.</p>
+                    <div class="flex gap-x-2 mt-6">
+                        <span class="text-xs bg-white/10 px-4 py-2 rounded-3xl">React.js</span>
+                        <span class="text-xs bg-white/10 px-4 py-2 rounded-3xl">TS</span>
+                        <span class="text-xs bg-white/10 px-4 py-2 rounded-3xl">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="group bg-zinc-900 rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-300">
+                <div class="h-64 bg-gradient-to-br from-purple-500 to-emerald-500 flex items-center justify-center text-6xl font-bold text-white/90">02</div>
+                <div class="p-8">
+                    <div class="text-emerald-400 text-sm font-medium mb-2">AI • CHROME EXTENSION</div>
+                    <h3 class="text-2xl font-semibold mb-2">Myro AI hotkeys</h3>
+                    <p class="text-white/60">A Chrome extension for controlling AI chat interfaces with hotkeys, including model switching and UI actions.</p>
+                    <div class="flex gap-x-2 mt-6">
+                        <span class="text-xs bg-white/10 px-4 py-2 rounded-3xl">JS</span>
+                        <span class="text-xs bg-white/10 px-4 py-2 rounded-3xl">DOM</span>
+                        <span class="text-xs bg-white/10 px-4 py-2 rounded-3xl">Hotkeys</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="group bg-zinc-900 rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-300">
+                <div class="h-64 bg-gradient-to-br from-pink-500 to-amber-500 flex items-center justify-center text-6xl font-bold text-white/90">03</div>
+                <div class="p-8">
+                    <div class="text-emerald-400 text-sm font-medium mb-2">SEARCH • CHROME EXTENSION</div>
+                    <h3 class="text-2xl font-semibold mb-2">Emma Search – Search Engines enhancer</h3>
+                    <p class="text-white/60">Build smarter searches faster with query templates, selected-text inserts, and advanced search operators.</p>
+                    <div class="flex gap-x-2 mt-6">
+                        <span class="text-xs bg-white/10 px-4 py-2 rounded-3xl">JS</span>
+                        <span class="text-xs bg-white/10 px-4 py-2 rounded-3xl">Query UX</span>
+                        <span class="text-xs bg-white/10 px-4 py-2 rounded-3xl">Search</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="bg-zinc-950 py-24">
+        <div class="max-w-screen-xl mx-auto px-6 grid md:grid-cols-12 gap-16 items-center">
+            <div class="md:col-span-5">
+                <div class="sticky top-8">
+                    <h2 class="heading-font text-5xl tracking-tighter mb-4">Hey, I'm Max 😎</h2>
+                    <p class="text-2xl text-white/70">I turn ideas into products people love using.</p>
+                </div>
+            </div>
+            
+            <div class="md:col-span-7 text-lg leading-relaxed text-white/80 space-y-8">
+                <p>Currently building in public on X and shipping side projects every month. Obsessed with great DX, delightful interfaces, and products that feel like magic.</p>
+                <p>When I'm not coding, you'll find me skiing, reading sci-fi, or hunting for the best espresso in town.</p>
+                
+                <a href="#" class="inline-flex items-center gap-x-3 text-emerald-400 hover:text-emerald-300 font-medium text-xl">
+                    Download résumé 
+                    <i class="fa-solid fa-download"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="max-w-screen-xl mx-auto px-6 py-20 bg-emerald-500 text-black rounded-3xl mx-6 mb-12">
+        <div class="text-center max-w-2xl mx-auto">
+            <h2 class="text-5xl font-semibold tracking-tighter mb-4">Ready to build something great?</h2>
+            <p class="text-xl mb-8">I'm currently open for new freelance projects and long-term collaborations.</p>
+            <a href="mailto:hi@yourname.dev" 
+               class="inline-flex items-center gap-x-3 bg-black text-white px-10 py-6 rounded-3xl text-2xl font-semibold hover:scale-105 transition-transform">
+                Start a project →
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-white/10 py-16">
+        <div class="max-w-screen-xl mx-auto px-6 grid md:grid-cols-3 gap-y-12">
+            <div>
+                <div class="flex items-center gap-x-2 text-xl mb-4">
+                    <span class="heading-font">maxeleron.dev</span>
+                </div>
+                <p class="text-white/40 text-sm">© 2026. Built by Max Ponomarenko.</p>
+            </div>
+            
+            <div class="flex flex-col gap-y-2 text-sm">
+                <a href="https://twitter.com/yourhandle" class="hover:text-emerald-400">𝕏 / Twitter</a>
+                <a href="https://github.com/maxeleron" class="hover:text-emerald-400">GitHub</a>
+                <a href="https://linkedin.com/in/maxeleron" class="hover:text-emerald-400">LinkedIn</a>
+            </div>
+            
+            <div class="text-right text-white/40 text-sm">
+                Built as a single-file template.<br>
+                Just change the text and you're live on .dev
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
