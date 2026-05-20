@@ -25,6 +25,12 @@ body {
     transform: translateY(-1px);
 }
 
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
 .terminal {
     animation: blink 1s step-end infinite;
 }
